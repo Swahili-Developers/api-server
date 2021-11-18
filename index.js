@@ -7,7 +7,7 @@ app.get("/", function (req, res) {
   res.send("Server Api is Running");
 });
 
-app.get("/users", function (req, res) {
+app.get("/api/users", function (req, res) {
   fs.readFile(__dirname + "/" + "users.json", "utf8", function (err, data) {
     console.log(data);
     res.end(data);
